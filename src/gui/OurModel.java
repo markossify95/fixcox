@@ -49,5 +49,16 @@ public class OurModel extends AbstractTableModel{
        
         }
     }
+
+    @Override
+    public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
+        if (array[rowIndex][columnIndex]==0) {
+            array[rowIndex][columnIndex]=1;
+        } else if (array[rowIndex][columnIndex]==1){
+            array[rowIndex][columnIndex]=2;
+        }
+    }
+    
+    
     
 }
